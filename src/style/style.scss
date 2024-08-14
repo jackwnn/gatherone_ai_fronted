@@ -1,0 +1,387 @@
+.home_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.navigation {
+  width: 244px;
+  height: 100vh;
+  padding: 24px;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #ebf2ff, #ededff);
+}
+
+/* 设置滚动条滑块的背景色和圆角 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c1c7d0;
+  border-radius: 3px;
+}
+// 取消导航栏右边框
+.ant-menu-inline,
+.ant-menu-vertical,
+.ant-menu-vertical-left {
+  border-right: none;
+}
+
+// 更改导航栏整体背景颜色和字体颜色
+.ant-menu {
+  background: none;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+// 更改二级路由背景和字体颜色
+.ant-menu-submenu > .ant-menu {
+  background: none;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+//更改选中子路由的父路由字体颜色
+.ant-menu-submenu-selected {
+  color: #6b70fb;
+}
+
+// 更改选中路由的背景和字体颜色
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #6b70fb;
+  color: #fff;
+  font-weight: 500;
+}
+
+//取消选中路由的右边框
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+  border-right: none;
+}
+
+//取消鼠标hover时的背景颜色
+.ant-menu-item:active,
+.ant-menu-submenu-title:active {
+  background: none;
+}
+
+//更改鼠标hover时的字体颜色
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+  color: #6b70fb;
+}
+
+// 更改鼠标hover时的展开收起图标颜色
+.ant-menu-submenu-vertical
+  > .ant-menu-submenu-title:hover
+  .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical-left
+  > .ant-menu-submenu-title:hover
+  .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical-right
+  > .ant-menu-submenu-title:hover
+  .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-inline
+  > .ant-menu-submenu-title:hover
+  .ant-menu-submenu-arrow::after,
+.ant-menu-submenu-vertical
+  > .ant-menu-submenu-title:hover
+  .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-vertical-left
+  > .ant-menu-submenu-title:hover
+  .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-vertical-right
+  > .ant-menu-submenu-title:hover
+  .ant-menu-submenu-arrow::before,
+.ant-menu-submenu-inline
+  > .ant-menu-submenu-title:hover
+  .ant-menu-submenu-arrow::before {
+  background: #6b70fb;
+}
+
+// 立即登录按钮
+.loginbutton {
+  width: 180px;
+  height: 35px;
+  background: rgba(107, 112, 251, 0.1);
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  border: none;
+  color: #6b70fb;
+  font-size: 14px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+//右侧内容容器
+.main_content {
+  width: calc(100% - 244px);
+  height: 100%;
+  background: linear-gradient(to bottom, #fff, #ededff);
+}
+
+// 登录页面样式
+.login_content {
+  width: 316px;
+  background: #fff;
+  position: relative;
+}
+
+.dialogicon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.65);
+  cursor: pointer;
+}
+
+.login_title {
+  text-align: center;
+  height: 36px;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 510;
+}
+
+//tab切换样式更改
+.ant-tabs-nav .ant-tabs-tab:active {
+  color: #6b70fb !important;
+}
+
+.ant-tabs-nav .ant-tabs-tab:hover {
+  color: #6b70fb !important;
+}
+
+.ant-tabs-ink-bar {
+  background-color: #6b70fb !important;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: #6b70fb !important;
+}
+
+.ant-tabs {
+  color: rgba(0, 0, 0, 0.85) !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 22px !important;
+}
+
+.ant-tabs-bar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.ant-tabs-nav {
+  margin: 0 56px !important;
+}
+
+.loginbtn {
+  width: 100%;
+  height: 40px;
+  background: #6b70fb;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 50px 0 16px 0;
+  cursor: pointer;
+}
+
+//对话页面样式
+.dialogue_div {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.dialogue_container {
+  width: 100%;
+  height: calc(100% - 228px);
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.initial {
+  width: 616px;
+  margin-top: 20px;
+  display: block;
+}
+
+.diaLogue {
+  width: 616px;
+  display: block;
+}
+
+.import_container {
+  width: 100%;
+  height: 228px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.importDiv {
+  width: 616px;
+  height: 100%;
+  padding: 16px;
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.importTop {
+  width: 100%;
+  height: 32px;
+  border-bottom: 1px solid #e7e7e7;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+//询问弹窗取消按钮样式
+.ant-btn {
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.ant-btn:hover {
+  border-color: #d9d9d9;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+//询问按钮确定样式
+.ant-btn-primary {
+  background: #6b70fb !important;
+  border-color: #6b70fb !important;
+  color: #fff;
+}
+
+.ant-btn-primary:hover {
+  background: #6b70fb;
+  color: #fff;
+}
+
+//取消弹窗的横线
+.ant-modal-header {
+  padding: 16px 24px 0 24px;
+  border-bottom: none;
+}
+
+//输入框样式更改
+.ant-input {
+  box-shadow: none !important;
+}
+
+.ant-input:hover {
+  border-color: #6b70fb !important;
+  box-shadow: none !important;
+}
+
+.ant-input:focus {
+  border-color: #6b70fb !important;
+  box-shadow: none;
+}
+
+//弹窗取消按钮
+.dialogClear {
+  width: 60px;
+  height: 100%;
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 0 20px 0 20px;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #d9d9d9;
+}
+
+//弹窗确定按钮
+.dialogconfirm {
+  width: 60px;
+  height: 100%;
+  line-height: 28px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 2px;
+  background: #6b70fb;
+  color: #fff;
+  border: 1px solid #6b70fb;
+}
+
+/* 清除对话按钮 */
+.eliminatebutton {
+  width: 180px;
+  height: 40px;
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.eliminatebutton:hover {
+  border-color: #6b70fb;
+  color: #6b70fb;
+}
+
+// 立即生成按钮
+.generatebtn{
+  width: 260px;
+  height: 40px;
+  position: absolute;
+  left: 24px;
+  bottom: 80px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 4px;
+}
+// .ant-upload-list-picture .ant-upload-list-item, .ant-upload-list-picture-card .ant-upload-list-item{
+//   position: none;
+//   z-index: 1;
+//   width: 214px;
+//   height: 52px;
+//   background: #F5F7FF;
+//   border: none;
+//   line-height: 52px;
+// }
+
+// .ant-upload-list-picture .ant-upload-list-item, .ant-upload-list-picture-card .ant-upload-list-item:hover{
+//   background: #F5F7FF;
+// }
+
+// .ant-upload-list-picture .ant-upload-list-item-thumbnail, .ant-upload-list-picture-card .ant-upload-list-item-thumbnail{
+//   top: 4px;
+// }
+
+// .ant-upload-list-picture .ant-upload-list-item-name, .ant-upload-list-picture-card .ant-upload-list-item-name{
+//   margin-top: -4px;
+// }
+
+// .ant-upload-list-item-card-actions.picture{
+//   top: 20px;
+// }
