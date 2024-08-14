@@ -159,7 +159,11 @@
               cursor: pointer;
             "
           >
-          <img src="@/assets/img/generation.png" alt="" style="width: 16px;height: 16px;margin: -2px 6px 0 0;">
+            <img
+              src="@/assets/img/generation.png"
+              alt=""
+              style="width: 16px; height: 16px; margin: -2px 6px 0 0"
+            />
             终止生成
           </div>
         </div>
@@ -261,64 +265,4 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss">
-.writ_log {
-  width: 330px;
-  height: 100%;
-  background: linear-gradient(to bottom, #ebf2ff, #ededff);
-  border-left: 1px solid #d6e4ff;
-  position: relative !important;
-  transition: width 0.8s;
-  -moz-transition: width 0.8s; /* Firefox 4 */
-  -webkit-transition: width 0.8s; /* Safari and Chrome */
-  -o-transition: width 0.8s; /* Opera */
-  transition: all 0.6s;
-  box-sizing: border-box;
-  padding: 24px 24px 24px 16px;
-  box-sizing: border-box;
-}
-
-.collapwrit_log {
-  width: 0px;
-  height: 100%;
-  background: linear-gradient(to bottom, #ebf2ff, #ededff);
-  border-left: 1px solid #d6e4ff;
-  position: relative !important;
-  transition: width 0.8s;
-  -moz-transition: width 0.8s; /* Firefox 4 */
-  -webkit-transition: width 0.8s; /* Safari and Chrome */
-  -o-transition: width 0.8s; /* Opera */
-  transition: all 0.6s;
-}
-
-.isCollapsebtn {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 50%;
-  right: -10px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.writ_name {
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.85);
-}
-
-.writ_img {
-  width: 14px;
-  height: 14px;
-  margin-right: 6px;
-}
-
-.writ_conatiner {
-  overflow-y: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.writself {
-  text-align: right;
-}
-</style>
+<style scoped lang="scss"></style>
