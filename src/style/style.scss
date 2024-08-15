@@ -348,7 +348,7 @@
 }
 
 // 立即生成按钮
-.generatebtn{
+.generatebtn {
   width: 260px;
   height: 40px;
   position: absolute;
@@ -386,7 +386,11 @@
 //   top: 20px;
 // }
 
+<<<<<<< Updated upstream
 //ai写作和思维导图页面公用样式
+=======
+// 每个页面左侧的页面样式
+>>>>>>> Stashed changes
 .writ_log {
   width: 330px;
   height: 100%;
@@ -431,18 +435,24 @@
   color: rgba(0, 0, 0, 0.85);
 }
 
+<<<<<<< Updated upstream
 .writ_img {
   width: 14px;
   height: 14px;
   margin-right: 6px;
 }
 
+=======
+>>>>>>> Stashed changes
 .writ_conatiner {
   overflow-y: auto;
   display: flex;
   justify-content: center;
 }
+<<<<<<< Updated upstream
 
 .writself {
   text-align: right;
 }
+=======
+>>>>>>> Stashed changes
